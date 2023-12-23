@@ -2,15 +2,17 @@
 
 ### Description
 
-Top Spin is a web application that allows both tennis fanatics and casual fans to gain insight into the most infamous question in any given sport - who is the greatest of all time (GOAT). It aggregates data about athletes, rankings, and matches dating back to late 1800s, and match odds from 2000 to 2019. The web app displays various dynamic summary views and more in-depth pages about tennis players and matches based on historical data.
+TopSpin is a web application that aims to use compelling data across ATP (Association of Tennis Professionals) and WTA (Women’s Tennis Association) tournaments and matches to provide greater insight into the most infamous question in any sport - who is the greatest of all time (GOAT)? It aggregates data about athletes, rankings, and matches dating back to late 1800s, and match odds from 2000 to 2019. The web app displays various dynamic summary views and more in-depth pages about tennis players and matches based on historical data.
 
-### Dependencies
+Visit the live web app @ [topspin.peterai.me](https://topspin.peterai.me/)
 
-- `React`
-- `Material UI`
+### Technologies
+
 - `Node.js`
 - `Express.js`
 - `MySQL`
+- `React`
+- `Material UI`
 - `Python`
 - `Pytorch`
 - `Numpy`
@@ -18,7 +20,7 @@ Top Spin is a web application that allows both tennis fanatics and casual fans t
 
 ### Project Installation and Setup
 
-#### Downloading node.js dependencies
+#### Downloading Node.js dependencies
 
 To install server packages (from project root)
 
@@ -34,7 +36,8 @@ This will install all necessary dependencies to run the project.
 
 #### Setting up Flask server
 
-Ensure python version >3.8x is installed. To install python packages, dependencies, and setup Flask server:
+Ensure Python version >3.8x is installed. To install Python packages, dependencies, and set up Flask server:
+
 ```
 cd src/ml
 pip install -r ./requirements.txt
@@ -42,7 +45,7 @@ pip install -r ./requirements.txt
 
 #### Running the project
 
-Note that a .env file placed at the project root containing the values specified in `server/config.js` is required to run this project and access the database. For security reasons, this file is not available in our GitHub repository (please locate and use local copy from Gradescope submission).
+Note that a .env file placed at the project root containing the values specified in `server/config.js` is required to run this project locally and access the database. For security reasons, this file is not available in our GitHub repository.
 
 Running the Flask server (port 5002):
 
@@ -68,7 +71,6 @@ Then, point your browser at [localhost:5173](http://localhost:5173/) to view the
 The core data used for this project consists of information about tennis tournaments, matches, and players through time dating back to the late 1800s for ATP and early 1900s for WTA. It is available on github in Jeff Sackmann's repos:
 
 - [tennis_wta](https://github.com/JeffSackmann/tennis_wta)
-
 - [tennis_atp](https://github.com/JeffSackmann/tennis_atp)
 
 Additionally, we use betting odds for tennis matches after 2000, available on [Kaggle](https://www.kaggle.com/datasets/hakeem/atp-and-wta-tennis-data) and on [github](https://github.com/chief-r0cka/MLT).
